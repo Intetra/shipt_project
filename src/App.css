@@ -1,0 +1,34 @@
+.container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.zips {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.zips li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.store-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.store {
+  text-align: center;
+}
