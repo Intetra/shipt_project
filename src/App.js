@@ -1,9 +1,34 @@
 import React, {Component} from 'react';
 import './App.css';
+import logo from './static/shipt-logo.svg'
+import font from './static/fonts/Scandia-Regular.otf';
+console.log(font)
 var api = require('./utils/api')
 
+function CreditBar() {
+    return (
+      <div className="credit-bar">
+        GET $50 + $15 CREDIT*
+      </div>
+    )
+}
+
+function SignUpBar() {
+    return (
+      <div className='sign-up-bar'>
+        <img
+          className='sign-up-bar-img'
+          src={logo}
+          alt='Shipt Logo'/>
+        <div
+            className={["btn", "sign-up-bar-button"].join(' ')}>
+            <p>SIGN UP</p>
+          </div>
+      </div>
+    )
+}
+
 function StoreGrid(props) {
-  console.log(props)
   if (Array.isArray(props.stores)) {
     return (
       <div className='store-grid'>
@@ -86,7 +111,7 @@ class App extends Component {
     }
     else {
     this.setState({
-      stores: 'THIS ZIPCODE IS INVALID! PLEASE TRY AGAIN',
+      stores: 'THIS ZIPCODE IS INVALID! PLEASE TRY AGAIN.',
       error: true});
     event.preventDefault();
     }
@@ -94,7 +119,10 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-      <h1>Shipt Project</h1>
+
+        <CreditBar />
+        <SignUpBar />
+
       <form onSubmit={this.handleSubmit}>
           <input
             className="input-box"

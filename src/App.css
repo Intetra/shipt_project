@@ -1,12 +1,17 @@
-.container {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
+@font-face {
+  font-family: 'Scandia';
+  src: url('./static/fonts/Scandia-Regular.otf') format('opentype'),
+       url('./static/fonts/Scandia-Regular.woff') format('woff'),
+       url('./static/fonts/Scandia-Regular.ttf')  format('truetype'),
+       url('./static/fonts/Scandia-Regular.svg#svgFontName') format('svg');
 }
 
-.zips {
-  display: flex;
-  justify-content: center;
+@font-face {
+  font-family: 'Scandia-Bold';
+  src: url('./static/fonts/Scandia-Bold.otf') format('opentype'),
+       url('./static/fonts/Scandia-Bold.woff') format('woff'),
+       url('./static/fonts/Scandia-Bold.ttf')  format('truetype'),
+       url('./static/fonts/Scandia-Bold.svg#svgFontName') format('svg');
 }
 
 ul {
@@ -17,10 +22,66 @@ li {
   list-style-type: none;
 }
 
-.zips li {
-  margin: 10px;
-  font-weight: bold;
+.btn {
+  background: #71B045;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+  background: #669933;
+  box-shadow: 0 0;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Scandia';
+}
+
+.credit-bar {
+  width: 100%;
+  height: 31px;
+  background: #414042;
+  color: #FFFFFF;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Scandia-Bold';
+}
+
+.sign-up-bar {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign-up-bar-img {
+  margin-left: 25px;
+  height: 40px;
+}
+
+.sign-up-bar-button {
+  color: white;
+  width: 120px;
+  height: 45PX;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  border-radius: 3px;
   cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-family: 'Scandia-Bold';
+
+}
+
+.store-grid-string {
+  font-size: 11px;
 }
 
 .store-list {
@@ -31,4 +92,11 @@ li {
 
 .store {
   text-align: center;
+}
+
+.input-box {
+}
+
+@media only screen (max-width: 768px){
+
 }
