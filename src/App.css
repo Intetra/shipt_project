@@ -33,6 +33,10 @@ li {
   color: white;
   font-size: 12px;
   font-family: 'Scandia-Bold';
+  -webkit-user-select: none;      
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn:hover {
